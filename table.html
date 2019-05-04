@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <body>
+    <table border = 0.5>
+      <thead>
+        <td>Name</td>
+        <td>Sector</td>
+        <td>Bio</td>
+      </thead>
+
+      {% for row in rows %}
+        <tr>
+          <td>{{row["name"]}}</td>
+          <td>{{row["sector"]}}</td>
+          <td>{{row["bio"]}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
