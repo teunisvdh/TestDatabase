@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <title>Node1 Statup Index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+    <link rel="stylesheet" href={{ url_for('static', filename='main.css') }}>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+  </head>
+
+  <body style="background:#e2e2e2;">
+
+    <div class="menubar" style="background:gray">
+      <!-- <a style="color:white; font-weight:bold;"> Node1 Startup Index </a> -->
+      <img src='/static/Logo_Node1_FC_600width.svg' style="width:10%;">
+    </div>
+
+    <form method="POST" action="/" style="margin:20px;">
+      <input type="text" name="Name" placeholder="Name">
+      <input type="text" name="Sector" placeholder="Sector">
+      <input type="text" name="Bio" placeholder="Bio">
+      <input type="submit" value="Add startup" style="background:#ffdd00; color:#383f51;">
+    </form>
+
+    <a href='/table'> See all startups </a>
+  </body>
+</html>
